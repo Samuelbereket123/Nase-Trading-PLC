@@ -1,103 +1,127 @@
 import Image from "next/image";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main>
+      <Hero />
+      {/* Services Section */}
+      <section id="services" style={{ padding: '80px 0', background: 'var(--color-white)' }}>
+        <div style={{ textAlign: 'center', marginBottom: 40 }}>
+          <h2 style={{ fontSize: 36, fontWeight: 700 }}>What We Offer</h2>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 32, flexWrap: 'wrap', maxWidth: 1100, margin: '0 auto' }}>
+          <div className="glass" style={{ flex: '1 1 220px', minWidth: 220, maxWidth: 260, padding: 32, margin: 8, textAlign: 'center', transition: 'transform 0.2s', cursor: 'pointer' }}>
+            <div style={{ fontSize: 32, marginBottom: 12 }}>🌍</div>
+            <h3 style={{ fontSize: 20, fontWeight: 600, marginBottom: 8 }}>Global Sourcing</h3>
+            <p style={{ color: 'var(--color-text)' }}>We help you find reliable international suppliers.</p>
+          </div>
+          <div className="glass" style={{ flex: '1 1 220px', minWidth: 220, maxWidth: 260, padding: 32, margin: 8, textAlign: 'center', transition: 'transform 0.2s', cursor: 'pointer' }}>
+            <div style={{ fontSize: 32, marginBottom: 12 }}>🚢</div>
+            <h3 style={{ fontSize: 20, fontWeight: 600, marginBottom: 8 }}>Logistics & Shipping</h3>
+            <p style={{ color: 'var(--color-text)' }}>Secure, on-time global delivery.</p>
+          </div>
+          <div className="glass" style={{ flex: '1 1 220px', minWidth: 220, maxWidth: 260, padding: 32, margin: 8, textAlign: 'center', transition: 'transform 0.2s', cursor: 'pointer' }}>
+            <div style={{ fontSize: 32, marginBottom: 12 }}>📄</div>
+            <h3 style={{ fontSize: 20, fontWeight: 600, marginBottom: 8 }}>Customs Clearance</h3>
+            <p style={{ color: 'var(--color-text)' }}>Avoid legal and documentation headaches.</p>
+          </div>
+          <div className="glass" style={{ flex: '1 1 220px', minWidth: 220, maxWidth: 260, padding: 32, margin: 8, textAlign: 'center', transition: 'transform 0.2s', cursor: 'pointer' }}>
+            <div style={{ fontSize: 32, marginBottom: 12 }}>🤝</div>
+            <h3 style={{ fontSize: 20, fontWeight: 600, marginBottom: 8 }}>Business Matching</h3>
+            <p style={{ color: 'var(--color-text)' }}>We connect buyers with the right sellers.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" style={{ padding: '80px 0', display: 'flex', flexWrap: 'wrap', alignItems: 'center', maxWidth: 1100, margin: '0 auto' }}>
+        <div style={{ flex: '1 1 350px', minWidth: 300, marginRight: 40 }}>
+          <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 24 }}>About Us</h2>
+          <p style={{ marginBottom: 16 }}>
+            NASE is dedicated to bridging businesses worldwide, making international trade simple, secure, and profitable. Our mission is to empower companies to expand globally with confidence and ease.
+          </p>
+          <p>
+            With over 10 years of experience, we have built a reputation for reliability and excellence, serving clients in 20+ countries across 4 continents.
+          </p>
+        </div>
+        <div style={{ flex: '1 1 250px', minWidth: 250, display: 'flex', gap: 16, flexWrap: 'wrap', justifyContent: 'center' }}>
+          <div className="glass" style={{ padding: 16, textAlign: 'center', minWidth: 110 }}>
+            <img src="/window.svg" alt="Team Member" style={{ width: 48, height: 48, borderRadius: '50%', marginBottom: 8 }} />
+            <div style={{ fontWeight: 600 }}>Alex Kim</div>
+            <div style={{ color: 'var(--color-text)', fontSize: 14 }}>Founder & CEO</div>
+          </div>
+          <div className="glass" style={{ padding: 16, textAlign: 'center', minWidth: 110 }}>
+            <img src="/globe.svg" alt="Team Member" style={{ width: 48, height: 48, borderRadius: '50%', marginBottom: 8 }} />
+            <div style={{ fontWeight: 600 }}>Maria Lopez</div>
+            <div style={{ color: 'var(--color-text)', fontSize: 14 }}>Head of Operations</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" style={{ padding: '80px 0', background: 'var(--color-white)', display: 'flex', justifyContent: 'center' }}>
+        <form className="glass" style={{ padding: 32, borderRadius: 18, minWidth: 320, maxWidth: 400, width: '100%', boxShadow: '0 4px 24px rgba(31,38,135,0.08)' }}>
+          <h2 style={{ fontSize: 28, fontWeight: 700, marginBottom: 24, textAlign: 'center' }}>Get in Touch</h2>
+          <div style={{ marginBottom: 16 }}>
+            <label htmlFor="name" style={{ display: 'block', marginBottom: 4, fontWeight: 500 }}>Full Name</label>
+            <input id="name" name="name" type="text" required style={{ width: '100%', padding: 10, borderRadius: 6, border: '1px solid #e5e7eb', marginBottom: 8 }} />
+          </div>
+          <div style={{ marginBottom: 16 }}>
+            <label htmlFor="email" style={{ display: 'block', marginBottom: 4, fontWeight: 500 }}>Email</label>
+            <input id="email" name="email" type="email" required style={{ width: '100%', padding: 10, borderRadius: 6, border: '1px solid #e5e7eb', marginBottom: 8 }} />
+          </div>
+          <div style={{ marginBottom: 16 }}>
+            <label htmlFor="message" style={{ display: 'block', marginBottom: 4, fontWeight: 500 }}>Message</label>
+            <textarea id="message" name="message" rows={4} required style={{ width: '100%', padding: 10, borderRadius: 6, border: '1px solid #e5e7eb' }} />
+          </div>
+          <button type="submit" style={{ width: '100%', background: 'var(--color-accent)', color: '#fff', padding: '0.75em', borderRadius: 8, fontWeight: 600, fontSize: 18, border: 'none', cursor: 'pointer', marginBottom: 12 }}>
+            Submit
+          </button>
+          <div style={{ textAlign: 'center', color: 'var(--color-text)', fontSize: 14 }}>
+            <span role="img" aria-label="phone">📞</span> +1 234 567 8901 &nbsp; | &nbsp;
+            <span role="img" aria-label="whatsapp">💬</span> WhatsApp
+          </div>
+        </form>
+      </section>
+
+      {/* Footer */}
+      <footer style={{ background: 'var(--color-primary)', color: '#fff', padding: '40px 0 0 0', textAlign: 'left' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', flexWrap: 'wrap', gap: 40, justifyContent: 'space-between', padding: '0 24px' }}>
+          {/* Company Info */}
+          <div style={{ flex: '1 1 260px', minWidth: 220, marginBottom: 32 }}>
+            <div style={{ fontWeight: 700, fontSize: 22, letterSpacing: 2, marginBottom: 8 }}>GlobalTrade</div>
+            <div style={{ color: 'rgba(255,255,255,0.85)', fontSize: 16, marginBottom: 12 }}>
+              Your trusted partner in international trade. We connect businesses worldwide through reliable import and export solutions.
+            </div>
+          </div>
+          {/* Quick Links */}
+          <div style={{ flex: '1 1 160px', minWidth: 140, marginBottom: 32 }}>
+            <div style={{ fontWeight: 600, fontSize: 16, marginBottom: 10 }}>Quick Links</div>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, lineHeight: 2 }}>
+              <li><a href="#home" style={{ color: '#fff', textDecoration: 'none' }}>Home</a></li>
+              <li><a href="#services" style={{ color: '#fff', textDecoration: 'none' }}>Services</a></li>
+              <li><a href="#about" style={{ color: '#fff', textDecoration: 'none' }}>About</a></li>
+              <li><a href="#contact" style={{ color: '#fff', textDecoration: 'none' }}>Contact</a></li>
+            </ul>
+          </div>
+          {/* Services Links */}
+          <div style={{ flex: '1 1 180px', minWidth: 140, marginBottom: 32 }}>
+            <div style={{ fontWeight: 600, fontSize: 16, marginBottom: 10 }}>Services</div>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, lineHeight: 2 }}>
+              <li><a href="#services" style={{ color: '#fff', textDecoration: 'none' }}>Import Services</a></li>
+              <li><a href="#services" style={{ color: '#fff', textDecoration: 'none' }}>Export Services</a></li>
+              <li><a href="#services" style={{ color: '#fff', textDecoration: 'none' }}>Trade Compliance</a></li>
+              <li><a href="#services" style={{ color: '#fff', textDecoration: 'none' }}>Logistics</a></li>
+            </ul>
+          </div>
+        </div>
+        <div style={{ borderTop: '1px solid rgba(255,255,255,0.12)', marginTop: 24, padding: '18px 0', textAlign: 'center', fontSize: 14, color: 'rgba(255,255,255,0.7)' }}>
+          © 2024 GlobalTrade. All rights reserved. |
+          <a href="#" style={{ color: '#fff', margin: '0 8px' }}>Privacy Policy</a> |
+          <a href="#" style={{ color: '#fff', margin: '0 8px' }}>Terms of Service</a>
+        </div>
       </footer>
-    </div>
+    </main>
   );
 }
