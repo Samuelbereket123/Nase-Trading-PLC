@@ -1,36 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+NASE – Global Trade Landing Page
+NASE is an international import & export trading company dedicated to connecting businesses worldwide through reliable, secure, and profitable trade solutions. This modern, minimalistic landing page is designed to communicate professionalism, global reach, and trustworthiness, while providing a seamless user experience.
+🌍 About NASE
+NASE simplifies global trade by bridging the gap between buyers and sellers across borders. With a decade of experience and a presence in over 20 countries, NASE is your trusted partner for all import and export needs.
+🚀 Features
+Floating Glassmorphic Navbar: Elegant, fixed navigation for easy access to all sections.
+Minimalistic Hero Section: Bold headline, clear value proposition, and animated business stats.
+Services Overview: Interactive cards highlighting key offerings like global sourcing, logistics, customs clearance, and business matching.
+About Us: Company vision, mission, and team highlights.
+Contact Form: Simple, secure way for businesses to get in touch.
+Modern Footer: Quick links, service links, and company info.
+🎨 Design
+Color Palette: Deep blue, light blue, and black for a professional, trustworthy look.
+Typography: Clean, modern fonts for clarity and impact.
+Responsive: Looks great on all devices.
+💡 Purpose
+This landing page is built to inspire confidence in NASE’s global trading expertise and to make it easy for potential partners to connect and start doing business.
